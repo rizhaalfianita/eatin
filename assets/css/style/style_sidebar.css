@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+    body{
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
+    }
+    .logo{
+        font-family: 'Lobster Two', cursive;
+    }
+    .vertical-nav{
+        min-width: 20rem;
+        width: 20rem;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+        transition: all 0.4s;
+    }
+    .page-content{
+        width: calc(100%-20rem);
+        margin-left: 20rem;
+        transition: all 0.4s;
+    }
+    #sidebar.active{
+        margin-left: -20rem;
+    }
+    #content.active{
+        width: 100%;
+        margin: 0;
+    }
+    .fa{
+        font-size: 15px;
+    }
+    .fa-credit-card, .fa-list-alt{
+        font-size: 12px;
+    }
+    .head{
+        background-image: linear-gradient(to bottom, rgba(191, 46, 46,0.7),rgba(191, 46, 46,0.7)), url("https://img.jakpost.net/c/2020/06/23/2020_06_23_98524_1592882725._large.jpg");
+        background-size: cover;
+    }
+    #sidebar .nav-item:hover,  #sidebar .nav-link:hover{
+        background-color:  rgba(217,83,79,0.95);
+        color: white;
+    }
+    #sidebar .nav-link{
+        color: #292929;
+    }
+    #sidebar .active{
+        background-color:  rgba(191, 46, 46,0.85);
+        color: white;
+    }
+    .btn{
+        border-radius: 20px;
+    }
