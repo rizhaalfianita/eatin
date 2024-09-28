@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,85 +12,105 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
-    body{
+
+    body {
         font-family: 'Quicksand', sans-serif;
         font-weight: 300;
     }
-    .logo{
+
+    .logo {
         font-family: 'Lobster Two', cursive;
         color: white;
     }
-    .logo:hover{
+
+    .logo:hover {
         outline: none;
         text-decoration: none;
         color: #c43f3f;
     }
-    .row-outer{
+
+    .row-outer {
         height: 100vh;
     }
-    .col-left{
-        background-image: linear-gradient(to bottom,rgba(0,0,0,0.4),rgba(0,0,0,0.6)), url("https://cdn.kaum.com/wp-content/uploads/2018/12/KAUMJAK11396-web.jpg");
+
+    .col-left {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("https://theasiacollective.com/wp-content/uploads/2023/04/HENSHIN-ONE.jpeg");
         background-size: cover;
     }
-    .col-right{
+
+    .col-right {
         background-color: #fcfcfc;
     }
-    .col-right form{
+
+    .col-right form {
         margin-top: 40%;
         transform: translateY(-40%);
     }
-    .form-group > label{
+
+    .form-group>label {
         font-family: 'Quicksand', sans-serif;
         font-size: 14px;
         font-weight: 500;
         color: #1a1b1c;
     }
-    .form-control{
+
+    .form-control {
         border-radius: 25px;
     }
-    .form-control::placeholder{
+
+    .form-control::placeholder {
         color: #cacbcc;
         font-family: 'Quicksand', sans-serif;
         font-weight: 300;
         font-size: 13px;
     }
-    form a{
+
+    form a {
         color: #65668a;
         font-size: 12px;
     }
-    form a:hover{
+
+    form a:hover {
         color: #d9534f;
     }
-    form input[type=submit]{
+
+    form input[type=submit] {
         border-radius: 20px;
         padding: 8px 50px;
         font-size: 14px;
         font-weight: 400;
     }
-    .col-right-left{
+
+    .col-right-left {
         /*top left - bottom right - top right - bottom left */
         border-radius: 17px 0 0 17px;
         background-color: #c9302a;
     }
-    .col-right-right{
+
+    .col-right-right {
         border-radius: 0 17px 17px 0;
     }
-    .col-right a{
+
+    .col-right a {
         text-decoration: none;
         font-size: 14px;
         color: #1a1b1c;
     }
-    .col-right a:hover{
+
+    .col-right a:hover {
         color: #d9534f;
     }
-    .col-right .row{
+
+    .col-right .row {
         width: 30vh;
     }
-    .col-left .container{
+
+    .col-left .container {
         margin-top: 42%;
         transform: translateY(-42%);
     }
 </style>
+
 <body>
     <div class="container-fluid">
         <div class="row row-outer">
@@ -127,14 +148,15 @@
 </body>
 <script>
     function validation() {
-		var username = document.getElementById("username").value;
-		var password = document.getElementById("password").value;		
-		if (username != "" && password!="") {
-			return true;
-		}else{
-			alert('Username or password cannot be empty!');
-			return false;
-		}
-	}
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if (username != "" && password != "") {
+            return true;
+        } else {
+            alert('Username or password cannot be empty!');
+            return false;
+        }
+    }
 </script>
+
 </html>
